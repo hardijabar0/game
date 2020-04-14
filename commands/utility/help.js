@@ -5,8 +5,8 @@ module.exports.run = async (bot, message, args) => {
     let bicon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
         .setThumbnail(bicon)
-        .setTitle("https://doritobot.glitch.me/#cmds")
-        .setURL("https://doritobot.glitch.me/#cmds")
+        .setTitle("https://glitch.com/edit/#!/commands-cosmic?path=commands:1:0")
+        .setURL("https://glitch.com/edit/#!/commands-cosmic?path=commands:1:0")
         .addField("Click the link to see the bots commands", "Prefix: -")
 
 
