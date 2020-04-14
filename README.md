@@ -1,4 +1,4 @@
-# Dorito-bot Discord.js
+# Dorito Bot Discord.js
 A multipurpose Discord bot with many NSFW and fun commands as well as utility and moderation. 
 * Go to [https://doritobot.glitch.me/#cmds](https://doritobot.glitch.me/#cmds) For a full command list.
 
