@@ -5,7 +5,7 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 # [Invite the bot to your server!](https://doritobot.glitch.me) 
 * Use if you don't want to follow the steps bellow.
 
-# **Bot installation guide**
+# **Installation guide**
 ## Getting your credentials:
 * Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 * Make a new application.
