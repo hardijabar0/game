@@ -36,7 +36,7 @@ Your token is what you use to log the bot in.
 ## How to install:
 1. Install node.js at https://nodejs.org
 2. Double click the **install.bat** file and wait for everything to install.
-3. Once everything has installed type **Start Bot.bat** .
+3. Once everything has installed type **start.bat** .
 4. Wait for everything to load and the bot should now be up and running.
 
 ## Adding the bot to your server:
@@ -53,7 +53,7 @@ Your token is what you use to log the bot in.
 # Well Done!
 You now have a self hosted working bot on your server!
 
-# troubleshooting
+# Troubleshooting
 If the music commands do not work then it is because FFMPEG was not installed.
 You can find many videos on Youtube showing how to install FFMPEG.
 Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
