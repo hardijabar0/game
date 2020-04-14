@@ -2,7 +2,7 @@
 A multipurpose Discord bot with many NSFW and fun commands as well as utility and moderation. 
 * Go to []() For a full command list.
 
-# [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=662063692862455844&scope=bot&permissions=473025622) 
+# [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=546100087579738133&scope=bot&permissions=506588246) 
 * Use if you don't want to follow the steps bellow.
 
 # **Installation guide**
