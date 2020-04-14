@@ -1,17 +1,24 @@
 const superagent = require("snekfetch");
 const Discord = require('discord.js')
+const utils = require('../../utils');
 
-exports.run = async (client, message, args, level) => {
-    if (!message.channel.nsfw) return message.channel.send('You can use this command in an NSFW Channel!')
-    superagent.get('https://nekos.life/api/v2/img/meow')
-        .end((err, response) => {
-      const lewdembed = new Discord.RichEmbed()
-      .setTitle("Random cat")
-      .setImage(response.body.url)
-      .setColor(`#000000`)
-      .setFooter(`owo`)
-      .setURL(response.body.url);
-  message.channel.send(lewdembed);
-    })
-	
+
+module.exports = {
+  name: "cat",
+  category: "fun",
+description: "Sends a random image of a cat",
+usage: "[command]",
+run: async (client, message, args, level) => {
+//command
+superagent.get('https://nekos.life/api/v2/img/meow')
+    .end((err, response) => {
+  const lewdembed = new Discord.MessageEmbed()
+  .setTitle("Random cat")
+  .setImage(response.body.url)
+  .setColor(`#000000`)
+  .setFooter(`owo`)
+  .setURL(response.body.url);
+message.channel.send(lewdembed);
+})
 }
+};

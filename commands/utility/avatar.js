@@ -1,9 +1,15 @@
-const utils = require('../utils');
+    const Discord = require("discord.js")
+    const utils = require('../../utils');
 
-module.exports.run = async (client, message, args) => {
 
-
-  
+    module.exports = {
+        name: "avatar",
+        category: "utility",
+    description: "Get the avatar of a user or yourself",
+    usage: "[command | user] or [command]",
+    run: async (client, message, args) => {
+    //command
+    
 {
     const user = message.mentions.users.first();
     if(!user)
@@ -12,12 +18,17 @@ module.exports.run = async (client, message, args) => {
     if(!user.avatarURL)
         return message.channel.send(`That user does not have an avatar`);
 
-    (await message.channel.send({
-        embed: utils.embed(`${user.username}'s Avatar`, `[Download](${user.avatarURL})`, [], { image: user.avatarURL })
-    }));
+    {
+    
+    const fuck = new Discord.MessageEmbed()
+          .setTitle(`${user.username}'s Avatar`)
+          .setColor("RANDOM")
+          .setImage(user.avatarURL())  
+      message.channel.send(fuck)
+// embed: utils.embed(`${user.username}'s Avatar`, `[Download](${user.avatarURL})`, [], { image: user.avatarURL })
+    };
     }
-};
-
-module.exports.help = {
-    command: 'avatar'
-};
+       
+    }
+    
+    };

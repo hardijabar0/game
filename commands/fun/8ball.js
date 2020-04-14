@@ -1,11 +1,12 @@
-const utils = require('../utils');
+const utils = require('../../utils');
 
-module.exports.run = async (client, message, args) => {
-  
-     if(message.guild === null)return;
-
-  
-function doMagic8BallVoodoo() {
+module.exports = {
+	name: "8ball",
+	category: "fun",
+  description: "Returns latency and API ping",
+  run: async (client, message, args) => {
+  //command
+  function doMagic8BallVoodoo() {
     var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'Maybe', 'Never', 'Yep'];
 
     return rand[Math.floor(Math.random()*rand.length)];
@@ -28,30 +29,29 @@ var msg1 = Array(5);
         var x = getRandomInt(0, 20);
 		if (x < 5){ 
          if (x < 3){
-			message.channel.sendMessage(msg1[1]);
+			message.channel.send(msg1[1]);
 		}
 		else {
-               message.channel.sendMessage(msg1[3]);
+               message.channel.send(msg1[3]);
 		}
 		}
 		else if (x<= 9) {
 			if (x >= 7){
-			message.channel.sendMessage(msg1[2]); }
+			message.channel.send(msg1[2]); }
 				else{
-                   message.channel.sendMessage(msg1[4]);
+                   message.channel.send(msg1[4]);
 				}
 		} 
 		else if (x <= 12 ) { 
-			message.channel.sendMessage(msg1[5]);
+			message.channel.send(msg1[5]);
 		}
 		else {
-			message.channel.sendMessage(msg1[6])
+			message.channel.send(msg1[6])
 		}
 		
 
   
-};
 
-module.exports.help = {
-    command: '8ball'
-};
+
+  }
+  };

@@ -1,13 +1,16 @@
 const Discord = require('discord.js')
 const cooldown = new Set()
-exports.run = (client, message, args) => {
-  
-  // This code is originally made by RyansHDs#4461. This is only for BEGINNER
-  // Thank you for using my code
-  // I know i will get alot of hater because of this...
+const utils = require('../../utils');
+
+module.exports = {
+  name: "ratewaifu",
+  category: "fun",
+description: "Allows you to rate a user or anyone or text",
+usage: "[command | text/user]",
+run: async (client, message, args) => {
   
   if (cooldown.has(message.author.id)) {
-    let cooldownemb = new Discord.RichEmbed()
+    let cooldownemb = new Discord.MessageEmbed()
     .setAuthor(`${message.author.username} Cooldown..`, message.author.displayAvatarURL)
     .setDescription(`You need to wait 5 seconds!`)
     .setColor(`RED`)
@@ -27,31 +30,31 @@ exports.run = (client, message, args) => {
   if (m421.length > 30) return message.channel.send(`I can't rate your waifu! It's over 30 text!`)
   let result = Math.floor((Math.random() * 100) + 0);
   
-    const happyrate = new Discord.RichEmbed()
+    const happyrate = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ?`)
   .setColor(`GREEN`)
     
-      const sadembed = new Discord.RichEmbed()
+      const sadembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
       
-        const idkembed = new Discord.RichEmbed()
+        const idkembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
         
-      const shrugembed = new Discord.RichEmbed()
+      const shrugembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
                 
-          const okembed = new Discord.RichEmbed()
+          const okembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
                         
-const thumbupembed = new Discord.RichEmbed()
+const thumbupembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
 
-const eyesembed = new Discord.RichEmbed()
+const eyesembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
   
@@ -63,3 +66,4 @@ const eyesembed = new Discord.RichEmbed()
   if (result > 70) return message.channel.send(thumbupembed)
   if (result > 80) return message.channel.send(eyesembed)
 }
+};

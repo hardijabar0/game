@@ -1,8 +1,14 @@
 var figlet = require('figlet');
+const utils = require('../../utils');
 
-module.exports.run = (client, message, args, tools) => {
-  
-  var maxLen = 100 // Kendiniz en yüksek harf sayisini ayarlayabilirsiniz
+module.exports = {
+  name: "ascii",
+  category: "fun",
+description: "Converts text info ASCII",
+usage: "[command | your text]",
+run: async (client, message, args) => {
+//command
+var maxLen = 100 
   
   if(args.join(' ').length > maxLen) return message.channel.send(`The max length is ${maxLen}!`) 
   
@@ -18,18 +24,5 @@ module.exports.run = (client, message, args, tools) => {
       message.channel.send(`${data}`, {code: 'AsciiArt'});
   });
 
-
 }
-
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'ascii',
-  description: '',
-  usage: 'ascii'
 };

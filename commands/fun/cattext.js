@@ -1,9 +1,16 @@
 const client = require('nekos.life');
 const Discord = require('discord.js')
 const neko = new client();
-module.exports.run = (client, message, args) => {
-  
-    if(message.guild === null)return;
+const utils = require('../../utils');
+
+
+module.exports = {
+    name: "cattext",
+    category: "fun",
+  description: "sends owo nya cute anime waifu text stuff",
+  usage: "[command]",
+  run: async (client, message, args) => {
+  //command
 
     async function work() {
 
@@ -15,10 +22,5 @@ module.exports.run = (client, message, args) => {
       }
 
       work();
-      
-
-};
-
-module.exports.help = {
-command: 'fact'
-};
+  }
+  };

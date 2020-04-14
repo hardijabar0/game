@@ -1,27 +1,38 @@
-exports.run = function(client, message, args) {
-         if(message.guild === null)return;
-  
-             let role = message.member.hasPermission('MANAGE_MESSAGES')
-    if(!message.member.hasPermission('MANAGE_MESSAGES'))
-      return message.reply("Sorry, you don't have permissions to use this! please have MANAGE_MESSAGES perm");
-  
-  let messagecount = parseInt(args.join(' '));
-  message.channel.send("Deleting " + messagecount + " messages..." + "If you still see this message then the amount was over 100 or the messages are more than 14 days old.")
-  
-  message.channel.fetchMessages({
-    limit: messagecount
-  }).then(messages => message.channel.bulkDelete(messages));
-};
+module.exports = {
+    name: "clear",
+    aliases: ["purge", "nuke"],
+    category: "moderation",
+    description: "Clears the chat",
+    run: async (client, message, args) => {
+        if (message.deletable) {
+            message.delete();
+        }
+    
+        // Member doesn't have permissions
+        if (!message.member.hasPermission("MANAGE_MESSAGES")) {
+            return message.reply("You can't delete messages....").then(m => m.delete(5000));
+        }
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 2
-};
+        // Check if args[0] is a number
+        if (isNaN(args[0]) || parseInt(args[0]) <= 0) {
+            return message.reply("Yeah.... That's not a number? I also can't delete 0 messages by the way.").then(m => m.delete(5000));
+        }
 
-exports.help = {
-  name: 'purge',
-  description: 'Purges X amount of messages from a given channel.',
-  usage: 'purge <number>'
-};
+        // Maybe the bot can't delete messages
+        if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
+            return message.reply("Sorryy... I can't delete messages.").then(m => m.delete(5000));
+        }
+
+        let deleteAmount;
+
+        if (parseInt(args[0]) > 100) {
+            deleteAmount = 100;
+        } else {
+            deleteAmount = parseInt(args[0]);
+        }
+
+        message.channel.bulkDelete(deleteAmount, true)
+            .then(deleted => message.channel.send(`I deleted \`${deleted.size}\` messages.`))
+            .catch(err => message.reply(`Something went wrong... ${err}`));
+    }
+}
