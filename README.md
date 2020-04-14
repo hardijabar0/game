@@ -27,7 +27,7 @@ Your token is what you use to log the bot in.
   ```js 
   {
   "token": "Your discord token",
-  "prefix": "-",
+  "prefix": "THIS IS NOW LOCATED IN INDEX.JS",
   "devID": "Your discord id"
    }
   ```
