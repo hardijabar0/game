@@ -1,6 +1,6 @@
 # Dorito Bot Discord.js
 A multipurpose Discord bot with many NSFW and fun commands as well as utility and moderation. 
-* Go to [https://doritobot.glitch.me/#cmds](https://doritobot.glitch.me/#cmds) For a full command list.
+* Go to []() For a full command list.
 
 # [Invite the bot to your server!](https://doritobot.glitch.me) 
 * Use if you don't want to follow the steps bellow.
@@ -65,4 +65,4 @@ Follow this [guide](https://anidiots.guide/other-guides/hosting-on-glitch) if yo
 
 [**An Idiot's Guide: Hosting on Glitch**](https://anidiots.guide/other-guides/hosting-on-glitch)
 
-> This Bot was made by [Aaronidk/aaronokiay](https://doritobot.glitch.me).
+> This Bot was made by [Aaronidk/aaronokiay]().
