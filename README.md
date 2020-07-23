@@ -58,11 +58,6 @@ If the music commands do not work then it is because FFMPEG was not installed.
 You can find many videos on Youtube showing how to install FFMPEG.
 Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
 
-## 24/7 Hosting:
 
-If you want to 24/7 host this bot for free I suggest using [Glitch.com](https://glitch.com)
-Follow this [guide](https://anidiots.guide/other-guides/hosting-on-glitch) if you don't know how to host on [Glitch](https://glitch.com)
-
-[**An Idiot's Guide: Hosting on Glitch**](https://anidiots.guide/other-guides/hosting-on-glitch)
 
 > This Bot was made by [Aaronidk/aaronokiay]().
