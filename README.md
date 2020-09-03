@@ -46,7 +46,7 @@ If you want the node_modules folder to be pre installed instead of running insta
 ## Adding the bot to your server:
 1. Go back to the [Discord Developer Portal](https://discordapp.com/developers/applications/) and click on your application.
 2. Go to the **General Information** tab and you should see your client ID.
-3. Click coppy.
+3. Click copy.
 4. Now that you have your client ID go to this website [Discord Permissions Calculator](https://discordapi.com/permissions.html#305261654)
 5. Paste your client ID into where it says **Client ID** then select the permissions you want.
 6. Once you have finished doing that click the invite link that the website generated and it should take you to your bots invite page.
