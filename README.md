@@ -51,7 +51,7 @@ If you want the node_modules folder to be pre installed instead of running insta
 5. Paste your client ID into where it says **Client ID** then select the permissions you want.
 6. Once you have finished doing that click the invite link that the website generated and it should take you to your bots invite page.
 7. Invite the bot to your server.
-8. Test the bot to see if it works by typing -ping and if the command works then you have completed all the steps correctly.
+8. Test the bot to see if it works by typing .ping and if the command works then you have completed all the steps correctly.
 ***If you want to constantly invite the bot to servers keep the link that the permission calculator generated saved somewhere***
 
 # Well Done!
