@@ -1,6 +1,7 @@
 # Dorito Bot Discord.js
 A multipurpose Discord bot with many NSFW and fun commands as well as utility and moderation. 
 * Go to []() For a full command list.
+* The default prefix is . so a command the help command would be .help 
 
 # [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=546100087579738133&scope=bot&permissions=506588246) 
 * Use if you don't want to follow the steps bellow.
