@@ -55,9 +55,9 @@ You now have a self hosted working bot on your server!
 
 # Self Hosting: (optional)
 If you want more reliable hosting without having it run on your main pc or on your home network, I recommend buying a web server.
-The bot can be ran on Linuix and Windows.
+The bot can be ran on Linux and Windows.
 
-# Linuix Install:
+# Linux Install:
 1. Download nodejs
 2. Download the bot from the release page.
 3. Use the terminal to navigate the the bot folder location where the index is located (dorito.js or index.js)
@@ -69,7 +69,7 @@ The bot can be ran on Linuix and Windows.
 If the music commands do not work then it is because FFMPEG was not installed.
 You can find many videos on Youtube showing how to install FFMPEG.
 Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
-or you can try type this in the terminal for linuix " npm i ffmpeg "
+or you can try type this in the terminal for Linux " npm i ffmpeg "
 
 
 > This Bot was made by [Aaronidk/aaronokiay]().
