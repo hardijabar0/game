@@ -41,6 +41,8 @@ Your token is what you use to log the bot in.
 3. Once everything has installed run **start.bat** .
 4. Wait for everything to load and the bot should now be up and running.
 
+If you want the node_modules folder to be preinstalled go to the [Release page and download the latest zip file](https://github.com/Aaronidk/Dorito-bot-discord.js/releases) 
+
 ## Adding the bot to your server:
 1. Go back to the [Discord Developer Portal](https://discordapp.com/developers/applications/) and click on your application.
 2. Go to the **General Information** tab and you should see your client ID.
