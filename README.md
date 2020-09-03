@@ -36,7 +36,7 @@ Your token is what you use to log the bot in.
 ## How to install:
 1. Install node.js at https://nodejs.org
 2. Double click the **install.bat** file and wait for everything to install.
-3. Once everything has installed type **start.bat** .
+3. Once everything has installed run **start.bat** .
 4. Wait for everything to load and the bot should now be up and running.
 
 ## Adding the bot to your server:
@@ -48,16 +48,28 @@ Your token is what you use to log the bot in.
 6. Once you have finished doing that click the invite link that the website generated and it should take you to your bots invite page.
 7. Invite the bot to your server.
 8. Test the bot to see if it works by typing -ping and if the command works then you have completed all the steps correctly.
-***If you want to constantly invite the bot to servers keep the link that the permission calculator generated***
+***If you want to constantly invite the bot to servers keep the link that the permission calculator generated saved somewhere***
 
 # Well Done!
 You now have a self hosted working bot on your server!
+
+# Self Hosting: (optional)
+If you want more reliable hosting without having it run on your main pc or on your home network, I recommend buying a web server.
+The bot can be ran on Linuix and Windows.
+
+# Linuix Install:
+1. Download nodejs
+2. Download the bot from the release page.
+3. Use the terminal to navigate the the bot folder location where the index is located (dorito.js or index.js)
+4. Type npm install
+5. To start the bot make sure you're terminal is still navigated to the bot folder then type " node . " or "node index.js " or " node dorito.js "
+6. I recommend learning how the terminal works as well as entering directories using cd in the terminal.
 
 # Troubleshooting
 If the music commands do not work then it is because FFMPEG was not installed.
 You can find many videos on Youtube showing how to install FFMPEG.
 Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
-
+or you can try type this in the terminal for linuix " npm i ffmpeg "
 
 
 > This Bot was made by [Aaronidk/aaronokiay]().
