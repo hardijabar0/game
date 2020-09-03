@@ -71,5 +71,7 @@ You can find many videos on Youtube showing how to install FFMPEG.
 Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
 or you can try type this in the terminal for Linux " npm i ffmpeg "
 
-
+# API Keys
+* The bot needs an osu api key so get one and paste it into the config.json.
+* If you don't care about the osu command or you don't want to get an api key go into the "/commands/utility/" folder and delete the osu.js command. 
 > This Bot was made by [Aaronidk/aaronokiay]().
