@@ -76,7 +76,7 @@ Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
 or you can try type this in the terminal for Linux " npm i ffmpeg "
 
 # API Keys
-* The bot needs an Osu api key so get and go into the "/commands/utility/ folder and find osu.js.
+* The bot needs an Osu api key so get one and go into the "/commands/utility/ folder and find osu.js.
 * Once in the osu.js file you should see text telling you where to paste your api key.
 * Now that you finished setting the API key save the the file and run the bot. The osu command should now work.
 * If you don't care about the osu command or you don't want to get an api key go into the "/commands/utility/" folder and delete the osu.js command. 
