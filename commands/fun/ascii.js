@@ -8,7 +8,7 @@ description: "Converts text info ASCII",
 usage: "[command | your text]",
 run: async (client, message, args) => {
 //command
-var maxLen = 100 
+var maxLen = 100 // Kendiniz en y�ksek harf sayisini ayarlayabilirsiniz
   
   if(args.join(' ').length > maxLen) return message.channel.send(`The max length is ${maxLen}!`) 
   

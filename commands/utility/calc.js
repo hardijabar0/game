@@ -4,8 +4,9 @@ const math = require('math-expression-evaluator');
 const stripIndents = require('common-tags').stripIndents;
 
 module.exports = {
-    name: "calc",
-    category: "utility",
+  name: "calc",
+  aliases: ["calculate"],
+  category: "utility",
   description: "Calculates a math equation",
   usage: "[command | input]",
   run: async (client, message, args) => {

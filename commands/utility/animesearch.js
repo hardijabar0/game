@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const malScraper = require('mal-scraper');
-const utils = require('../../utils');
 
 module.exports = {
   name: "animesearch",

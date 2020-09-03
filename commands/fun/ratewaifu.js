@@ -4,10 +4,14 @@ const utils = require('../../utils');
 
 module.exports = {
   name: "ratewaifu",
+  aliases: ["rate"],
   category: "fun",
-description: "Allows you to rate a user or anyone or text",
-usage: "[command | text/user]",
+  description: "Allows you to rate a user or anyone or text",
+  usage: "[command | text/user]",
 run: async (client, message, args) => {
+//command
+// This command was originally made by RyansHDs#4461.
+  // Thank you for letting me use this. -Aaron
   
   if (cooldown.has(message.author.id)) {
     let cooldownemb = new Discord.MessageEmbed()

@@ -7,7 +7,7 @@ const utils = require('../../utils');
 module.exports = {
     name: "fact",
     category: "fun",
-  description: "sends a cool fact",
+  description: "sends a random fact",
   usage: "[command]",
   run: async (client, message, args) => {
   //command

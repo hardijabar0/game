@@ -25,10 +25,8 @@ exports.formatNumber = (number) => {
 
 const randomFooter = () => {
     return exports.randomSelection([
-        'weed',
-        'owo nya desu desu',
-        'fun fact Aaron is autistic',
-        'type lol-help'
+        '420 weed',
+        'hi',
     ]);
 };
 
@@ -165,6 +163,22 @@ exports.sendLarge = (channel, largeMessage, options = {}) => {
 exports.now = () => {
     let now = process.hrtime();
     return now[0] * 1e3 + now[1] / 1e6;
+};
+
+exports.playAnimation = (msg, delay, list) => {
+    if (list.length < 1)
+        return;
+
+    let next = list.shift();
+    let start = this.now();
+
+    msg.channel.send(next).then(() => {
+        let elapsed = this.now() - start;
+
+        setTimeout(() => {
+            this.playAnimation(msg, delay, list);
+        }, Math.max(50, delay - elapsed));
+    });
 };
 
 exports.quoteRegex = (input) => `${input}`.replace(/[.?*+^$[\]\\(){}|-]/g, '\\$&');

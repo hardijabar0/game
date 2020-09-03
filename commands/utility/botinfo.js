@@ -1,5 +1,4 @@
 const Discord = require("discord.js")
-const utils = require('../../utils');
 
 const { version } = require("discord.js");
 const moment = require("moment");
@@ -24,23 +23,23 @@ module.exports = {
           return console.log(err);
       }
       const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
-      const embedStats = new Discord.MessageEmbed()
+      const botinfo = new Discord.MessageEmbed()
           .setAuthor(client.user.username)
           .setTitle("__**Stats:**__")
           .setColor("RANDOM")
-          .addField("� Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
-          .addField("� Uptime ", `${client.uptime} ms`, true)
-          .addField("� Users", `${client.users.cache.size}`, true)
-          .addField("� Servers", `${client.guilds.cache.size}`, true)
-          .addField("� Channels ", `${client.channels.cache.size}`, true)
-          .addField("� Discord.js", `v${version}`, true)
-          .addField("� Node", `${process.version}`, true)
-          .addField("� CPU", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
-          .addField("� CPU usage", `\`${percent.toFixed(2)}%\``, true)
-          .addField("� Arch", `\`${os.arch()}\``, true)
-          .addField("� Platform", `\`\`${os.platform()}\`\``, true)
+          .addField("⏳ Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
+          .addField("⌚️ Uptime ", `${duration}`, true)
+          .addField("📁 Users", `${client.users.cache.size}`, true)
+          .addField("📁 Servers", `${client.guilds.cache.size}`, true)
+          .addField("📁 Channels ", `${client.channels.cache.size}`, true)
+          .addField("👾 Discord.js", `v${version}`, true)
+          .addField("🤖 Node", `${process.version}`, true)
+          .addField("🤖 CPU", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
+          .addField("🤖 CPU usage", `\`${percent.toFixed(2)}%\``, true)
+          .addField("🤖 Arch", `\`${os.arch()}\``, true)
+          .addField("💻 Platform", `\`\`${os.platform()}\`\``, true)
           .addField("API Latency", `${(client.ws.ping)}ms`)  
-      message.channel.send(embedStats)
+      message.channel.send(botinfo)
   });
   }
   };

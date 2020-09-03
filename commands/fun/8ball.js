@@ -3,7 +3,7 @@ const utils = require('../../utils');
 module.exports = {
 	name: "8ball",
 	category: "fun",
-  description: "Returns latency and API ping",
+  description: "returns a response based on your question",
   run: async (client, message, args) => {
   //command
   function doMagic8BallVoodoo() {

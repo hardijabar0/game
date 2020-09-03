@@ -1,10 +1,9 @@
     const Discord = require("discord.js")
-    const utils = require('../../utils');
-
 
     module.exports = {
-        name: "whois",
-        category: "utility",
+    name: "whois",
+	aliases: ["info"],
+    category: "utility",
     description: "Get information about a user",
     usage: "[command | user] or [command]",
     run: async (client, message, args) => {
@@ -17,8 +16,8 @@
     
     var playing = ("[ " + user.presence.activities + " ]")
     
-    const ihatekids = new Discord.MessageEmbed()
-          .setTitle("Info of ", `${user.name}`)
+    const whothefuq = new Discord.MessageEmbed()
+          .setTitle("User Info:")
           .addField("Full Username", `${user.tag}`)
           .addField("ID", user.id)
           .addField("Playing",playing, true)
@@ -27,7 +26,7 @@
           .setColor("RANDOM")
           .setTimestamp()
           .setThumbnail(user.avatarURL())  
-      message.channel.send(ihatekids)
+      message.channel.send(whothefuq)
 
     };
     }

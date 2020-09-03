@@ -24,10 +24,10 @@ module.exports = {
 
 function getAll(client, message) {
     const embed = new MessageEmbed()
-        .setColor("RANDOM")
+        .setColor("#FFDFD3")
+        .setThumbnail("https://cdn.discordapp.com/avatars/546100087579738133/ea87b6e238044da37381c2277987fd3e.webp")
         .setTitle('Help Menu')
-        .setURL('https://potatosalad.studio')
-        .setThumbnail('https://www.doritos.com/sites/doritos.com/files/2018-08/new-nacho-cheese.png')
+        .setURL('https://www.youtube.com/watch?v=X1JRoP0xCqs')
         .setFooter("To see command descriptions and usage type .help [CMD Name]")
         
     // Map all the commands
@@ -45,9 +45,8 @@ function getAll(client, message) {
         .reduce((string, category) => string + "\n" + category);
 
         message.reply('Sent help to dms')
-        //.then(msg => {
-         // msg.delete(3000)
-        //})
+
+        
 
     return message.author.send(embed.setDescription(info));
     
