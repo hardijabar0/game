@@ -64,7 +64,7 @@ The bot can be ran on Linux and Windows.
 # Linux Install:
 1. Download nodejs
 2. Download the bot from the release page.
-3. Use the terminal to navigate the the bot folder location where the index is located (dorito.js or index.js)
+3. Use the terminal to navigate to the bot folder location where the index is located (dorito.js or index.js)
 4. Type npm install
 5. To start the bot make sure you're terminal is still navigated to the bot folder then type " node . " or "node index.js " or " node dorito.js "
 6. I recommend learning how the terminal works as well as entering directories using cd in the terminal.
