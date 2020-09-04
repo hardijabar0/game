@@ -23,7 +23,7 @@ module.exports = {
   }
 
         async function work() {
-        let owo = (await neko.nsfw.hentaiGif());
+        let owo = (await neko.nsfw.randomHentaiGif());
 
         const hentaigif = new Discord.MessageEmbed()
         .setTitle("Hentai Gif")
