@@ -1,16 +1,26 @@
-const superagent = require("snekfetch");
+const superagent = require("node-fetch");
 const Discord = require('discord.js')
 
 const rp = require('request-promise-native');
 
 module.exports = {
     name: "ass",
-    category: "nsfw",
+    category: "NSFW",
   description: "Sends ass",
   run: async (client, message, args, level) => {
   //command
-  if (!message.channel.nsfw) return message.channel.send('You can use this command in an NSFW Channel!')
 
+  //Checks channel for nsfw
+  var errMessage = "This is not an NSFW Channel";
+  if (!message.channel.nsfw) {
+      message.react('💢');
+
+      return message.reply(errMessage)
+      .then(msg => {
+      msg.delete({ timeout: 3000 })
+      })
+      
+  }
 
   return rp.get('http://api.obutts.ru/butts/0/1/random').then(JSON.parse).then(function(res)  {
     return rp.get({
@@ -19,13 +29,13 @@ module.exports = {
     });
 }).then(function(res)   {
 
-const lewdembed = new Discord.MessageEmbed()
+const ass = new Discord.MessageEmbed()
       .setTitle("Ass")
-      .setColor(`#000000`)
+      .setColor(`#FF0000`)
       .setImage("attachment://file.png").attachFiles([{ attachment: res, name: "file.png" }])
 
 
-    message.channel.send(lewdembed);
+    message.channel.send(ass);
 });
   }
   };

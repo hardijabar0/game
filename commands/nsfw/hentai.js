@@ -1,22 +1,39 @@
-const superagent = require("snekfetch");
+const client = require('nekos.life');
 const Discord = require('discord.js')
+const neko = new client();
 
 module.exports = {
   name: "hentai",
-  category: "nsfw",
-description: "",
-run: async (client, message, args, level) => {
-//command
-if (!message.channel.nsfw) return message.channel.send('You can use this command in an NSFW Channel!')
-superagent.get('https://nekos.life/api/v2/img/hentai')
-    .end((err, response) => {
-  const lewdembed = new Discord.MessageEmbed()
-  .setTitle("Hentai")
-  .setImage(response.body.url)
-  .setColor(`#000000`)
-  .setFooter(`Tags: hentai`)
-  .setURL(response.body.url);
-message.channel.send(lewdembed);
-})
+  category: "NSFW",
+  description: "Sends random hentai",
+  usage: "[command]",
+  run: async (client, message, args) => {
+  //command
+
+  //Checks channel for nsfw
+  var errMessage = "This is not an NSFW Channel";
+  if (!message.channel.nsfw) {
+      message.react('💢');
+
+      return message.reply(errMessage)
+      .then(msg => {
+      msg.delete({ timeout: 3000 })
+      })
+      
+  }
+
+        async function work() {
+        let owo = (await neko.nsfw.hentai());
+
+        const hentai = new Discord.MessageEmbed()
+        .setTitle("Hentai")
+        .setImage(owo.url)
+        .setColor(`#FF0000`)
+        .setURL(owo.url);
+        message.channel.send(hentai);
+
 }
-};
+
+      work();
+}
+                };

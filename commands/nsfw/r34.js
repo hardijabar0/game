@@ -1,22 +1,27 @@
 const randomPuppy = require('random-puppy');
-const request = require('snekfetch');
+const request = require('node-fetch');
 const fs = require("fs")
-const utils = require('../../utils');
 
 const Discord = require('discord.js');
 const booru = require('booru');
-const errors = require('../../json/errors');
 
 module.exports = {
     name: "r34",
-    category: "nsfw",
+    category: "NSFW",
   description: "Searches rule34",
   run: async (bot, message, args, level) => {
   //command
-  var errMessage = errors[Math.round(Math.random() * (errors.length - 1))];
+
+  //Checks channel for nsfw
+  var errMessage = "This is not an NSFW Channel";
   if (!message.channel.nsfw) {
       message.react('💢');
-      return message.channel.send(errMessage);
+
+      return message.reply(errMessage)
+      .then(msg => {
+      msg.delete({ timeout: 3000 })
+      })
+      
   }
 
   if (message.content.toUpperCase().includes('LOLI') || message.content.toUpperCase().includes('GORE')) return message.channel.send('That kind of stuff is not allowed! Not even in NSFW channels!');
@@ -29,7 +34,7 @@ module.exports = {
               const embed = new Discord.MessageEmbed()
               .setTitle("Rule34:")
               .setImage(image.common.file_url)
-              .setColor('#000000')
+              .setColor('#FF0000')
               .setFooter(`Tags: r34 ${query}`)
               .setURL(image.common.file_url);
           return message.channel.send({ embed });
