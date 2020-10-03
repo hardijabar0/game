@@ -8,6 +8,7 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * Use if you don't want to follow the steps bellow.
 
 # **Installation guide**
+You can now download the bot from the release page so you can follow this setup guide easier.
 ## Getting your credentials:
 * Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 * Make a new application.
