@@ -1,4 +1,4 @@
-//Modules
+//Module
 const { Client, Collection } = require("discord.js");
 const config = require("./config.json");
 const fs = require("fs");
