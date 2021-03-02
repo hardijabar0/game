@@ -8,11 +8,11 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * Use if you don't want to follow the steps bellow.
 
 ### Requirements
-node.js
-python 2.7 and above
-Linux or Windows
-Basic knowledge of using cd in a command prompt
-Knowing how to install node_modules using NPM
+* node.js
+* python 2.7 and above
+* Linux or Windows
+* Basic knowledge of using cd in a command prompt
+* Knowing how to install node_modules using NPM
 
 # **Installation guide**
 You can now download the bot from the release page so you can follow this setup guide easier.
