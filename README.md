@@ -4,9 +4,6 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * The default prefix is . so the help command would be .help 
 # [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=546100087579738133&scope=bot&permissions=506588246) 
 * Use the above link if you don't want to follow the steps bellow.
-### Update
-* I removed economy since it caused some errors. If you want to add this back in yourself use https://www.npmjs.com/package/discord-economy
-* the handlers folder should help you out since I commented out some stuff.
 ### Requirements
 * node.js
 * Windows Build toold 2017
