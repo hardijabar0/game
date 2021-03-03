@@ -7,6 +7,9 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 # [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=546100087579738133&scope=bot&permissions=506588246) 
 * Use the above link if you don't want to follow the steps bellow.
 
+### Update
+* I removed economy since it caused some errors. If you want to add this back in yourself use https://www.npmjs.com/package/discord-economy
+
 ### Requirements
 * node.js
 * python 2.7 and above
