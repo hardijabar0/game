@@ -1,5 +1,9 @@
 # [Dorito Bot Discord.js](https://github.com/Aaronidk/Dorito-bot-discord.js) 
 
+For non advanced users, the bot will not work if you don't download it from the release page.
+If you know how this stuff work you can just download this project directly and install the modules yourself.
+Installing everything yourself may be far better.
+
 A multipurpose Discord bot with many NSFW and fun commands as well as utility and moderation. 
 * Go to []() For a full command list.
 * The default prefix is . so the help command would be .help 
