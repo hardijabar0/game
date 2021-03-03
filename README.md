@@ -13,7 +13,7 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * Knowing how to install node_modules using NPM
 * For non advanced users, the bot will not work if you don't download it from the release page.
 If you know how this stuff works you can just download this project directly and install the modules yourself.
-Installing everything yourself may be better it tems of keeping modules up to date.
+Installing everything yourself may be better in terms of keeping modules up to date.
 # **Installation guide**
 *You can now download the bot from the release page so you can follow this setup guide easier.
 *New bat files have been made so you can install and update modules easier.
