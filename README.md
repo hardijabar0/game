@@ -9,6 +9,7 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 
 ### Update
 * I removed economy since it caused some errors. If you want to add this back in yourself use https://www.npmjs.com/package/discord-economy
+* the handlers folder should help you out since I commented out some stuff.
 
 ### Requirements
 * node.js
