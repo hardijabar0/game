@@ -15,7 +15,8 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 If you know how this stuff works you can just download this project directly and install the modules yourself.
 Installing everything yourself may be better it tems of keeping modules up to date.
 # **Installation guide**
-You can now download the bot from the release page so you can follow this setup guide easier.
+*You can now download the bot from the release page so you can follow this setup guide easier.
+*New bat files have been made so you can install and update modules easier.
 ## Getting your credentials:
 * Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 * Make a new application.
