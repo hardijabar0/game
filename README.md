@@ -2,28 +2,12 @@
 
 A multipurpose Discord bot with many NSFW and fun commands as well as utility and moderation. 
 * Go to []() For a full command list.
-* The default prefix is . so the help command would be .help 
+* The default prefix is . so a command the help command would be .help 
 
 # [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=546100087579738133&scope=bot&permissions=506588246) 
-* Use the above link if you don't want to follow the steps bellow.
-
-### Update
-* I removed economy since it caused some errors. If you want to add this back in yourself use https://www.npmjs.com/package/discord-economy
-* the handlers folder should help you out since I commented out some stuff.
-
-### Requirements
-* node.js
-* python 2.7 and above
-* Linux or Windows
-* Basic knowledge of using cd in a command prompt
-* Knowing how to install node_modules using NPM
-
-For non advanced users, the bot will not work if you don't download it from the release page.
-If you know how this stuff works you can just download this project directly and install the modules yourself.
-Installing everything yourself may be better it tems of keeping modules up to date.
+* Use if you don't want to follow the steps bellow.
 
 # **Installation guide**
-You can now download the bot from the release page so you can follow this setup guide easier.
 ## Getting your credentials:
 * Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 * Make a new application.
@@ -82,7 +66,7 @@ The bot can be ran on Linux and Windows.
 2. Download the bot from the release page.
 3. Use the terminal to navigate to the bot folder location where the index is located (dorito.js or index.js)
 4. Type npm install
-5. To start the bot make sure your terminal is still navigated to the bot folder then type " node . " or "node index.js " or " node dorito.js "
+5. To start the bot make sure you're terminal is still navigated to the bot folder then type " node . " or "node index.js " or " node dorito.js "
 6. I recommend learning how the terminal works as well as entering directories using cd in the terminal.
 
 # Troubleshooting
