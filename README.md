@@ -9,7 +9,8 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * the handlers folder should help you out since I commented out some stuff.
 ### Requirements
 * node.js
-* python 2.7 and above
+* Windows Build toold 2017
+* python 2.7 and above (make sure you add python to path or enviormental variables)
 * Linux or Windows
 * Basic knowledge of using cd in a command prompt
 * Knowing how to install node_modules using NPM
