@@ -8,9 +8,9 @@ table.setHeading("Command", "Load status");
 console.log("Welcome to [ DoritoBot ] // By https://github.com/aaronidk // Discord: Aaron#7444")
 
    //Loads Discord economy module
-    console.log("-------Loading economy module-------")
-    const economy = require("../economy/economy.js");
-    console.log("-------Loaded economy module-------")
+   // console.log("-------Loading economy module-------")
+    //const economy = require("../economy/economy.js");
+   // console.log("-------Loaded economy module-------")
 
 module.exports = (client) => {
     readdirSync("./commands/").forEach(dir => {
