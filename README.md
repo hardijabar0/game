@@ -4,7 +4,7 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * The default prefix is . so the help command would be .help 
 # [Invite the bot to your server!](https://discordapp.com/oauth2/authorize?client_id=546100087579738133&scope=bot&permissions=506588246) 
 * Use the above link if you don't want to follow the steps bellow.
-### Requirements
+### Requirements if not using the release page
 * node.js
 * Windows Build toold 2017
 * python 2.7 and above (make sure you add python to path or enviormental variables)
