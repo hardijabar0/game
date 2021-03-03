@@ -24,7 +24,7 @@ module.exports = {
   }
         const user = message.mentions.users.first();
         if(!user)
-        return message.reply('Mention someone to hug');
+        return message.reply('Mention someone to spank');
 
         async function work() {
         let owo = (await neko.nsfw.spank());
