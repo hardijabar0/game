@@ -6,7 +6,7 @@ A multipurpose Discord bot with many NSFW and fun commands as well as utility an
 * Use the above link if you don't want to follow the steps bellow.
 ### Requirements if not using the release page
 * node.js
-* Windows Build toold 2017
+* Windows Build tools 2017
 * python 2.7 and above (make sure you add python to path or enviormental variables)
 * Linux or Windows
 * Basic knowledge of using cd in a command prompt
