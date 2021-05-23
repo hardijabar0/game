@@ -16,8 +16,8 @@ module.exports = {
 
         const avatar = new Discord.MessageEmbed()
             .setTitle(`${member.user.username}'s Avatar`)
-            .setColor("RANDOM")
-            .setImage(member.user.avatarURL())
+            .setColor(member.displayHexColor)
+            .setImage(member.user.displayAvatarURL({ dynamic: true, size: 2048 }))
             .setURL(member.user.avatarURL())
         message.channel.send(avatar)
             // If bot doesnt have embed perms 
