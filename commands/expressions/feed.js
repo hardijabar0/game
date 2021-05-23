@@ -13,7 +13,7 @@ module.exports = {
 
         const user = message.mentions.users.first();
         if(!user)
-        return message.reply('Mention someone to feed');
+        return message.reply('Mention someone to cuddle');
 
         async function work() {
         let owo = (await neko.sfw.feed());
