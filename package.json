@@ -27,7 +27,7 @@
     "request-promise-native": "^1.0.9",
     "sqlite3": "^5.0.2",
     "urban.js": "^2.4.3",
-    "ws": "^7.4.5"
+    "ws": "^7.4.6"
   },
   "devDependencies": {},
   "scripts": {
