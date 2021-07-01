@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 const neko = new client();
 
 module.exports = {
-  name: "girlsologif",
+  name: "2dfeetgif",
   category: "NSFW",
   usage: "[command]",
   run: async (client, message, args) => {
@@ -22,14 +22,14 @@ module.exports = {
   }
 
         async function work() {
-        let owo = (await neko.nsfw.girlSoloGif());
+        let owo = (await neko.nsfw.feetGif());
 
-        const keta = new Discord.MessageEmbed()
-        .setTitle("girlSoloGif")
+        const feetgif = new Discord.MessageEmbed()
+        .setTitle("2D Feet Gif")
         .setImage(owo.url)
         .setColor(`#FF0000`)
         .setURL(owo.url);
-        message.channel.send(keta);
+        message.channel.send(feetgif);
 
 }
 
