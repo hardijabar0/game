@@ -5,7 +5,7 @@ const ascii = require("ascii-table");
 let table = new ascii("Commands");
 table.setHeading("Command", "Load status");
 
-console.log("Welcome to [ DoritoBot ] // By https://github.com/aaronidk // Discord: Aaron#7444")
+console.log("Welcome to [ DoritoBot ] // By https://github.com/nyekuuu //")
 
    //Loads Discord economy module
     console.log("-------Loading economy module-------")
