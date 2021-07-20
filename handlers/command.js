@@ -31,7 +31,7 @@ module.exports = (client) => {
         }
     });
     console.log(table.toString());
-    console.log("Welcome to [ DoritoBot ] // By https://github.com/aaronidk // Discord: Aaron#7444")
+    console.log("Welcome to [ DoritoBot ] // By https://github.com/nyekuuu // ")
 
 	console.log("Logging into Bot User...");
 
