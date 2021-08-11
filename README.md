@@ -43,7 +43,7 @@ Your token is what you use to log the bot in.
   ```
   * You may now save the config and move to the installation process.
 ## How to install:
-1. Install node.js at https://nodejs.org
+1. Install node.js at https://nodejs.org when installing you can check "automatically install the necessary tools." checkbox. This removes the need to install visualstudio build  tools manualy.
 2. Double click the **install.bat** file and wait for everything to install.
 3. Once everything has installed run **start.bat** .
 3. Once everything has installed run **run.bat** .
