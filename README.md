@@ -45,9 +45,10 @@ Your token is what you use to log the bot in.
 ## How to install:
 1. Install node.js at https://nodejs.org when installing you can check "automatically install the necessary tools." checkbox. This removes the need to install visualstudio build  tools manualy.
 2. Double click the **install.bat** file and wait for everything to install.
-3. Once everything has installed run **start.bat** .
-3. Once everything has installed run **run.bat** .
+3. Once everything has installed run **start.bat or run.bat** .
 4. Wait for everything to load and the bot should now be up and running.
+5. Updating the node_modules can be done with the update .bat file
+6. If these bat files don't work I suggest downloading the bot from the release page instead. (this may contain outdated node_modules)
 
 If you want the node_modules folder to be pre installed instead of running install.bat, go to the [Release page and download the latest zip file](https://github.com/Aaronidk/Dorito-bot-discord.js/releases) 
 ## Adding the bot to your server:
