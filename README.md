@@ -77,7 +77,7 @@ The bot can be ran on Linux and Windows.
 If the music commands do not work then it is because FFMPEG was not installed.
 You can find many videos on Youtube showing how to install FFMPEG.
 Here is one for [Windows](https://www.youtube.com/watch?v=qjtmgCb8NcE)
-or you can try type this in the terminal for Linux " npm i ffmpeg "
+or you can try type this in the terminal for Linux and maybe Windows " npm i ffmpeg "
 # API Keys (optional)
 * The bot needs an Osu api key so get one and go into the "/commands/utility/" folder and find osu.js.
 * Once in the osu.js file you should see text telling you where to paste your api key.
