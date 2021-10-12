@@ -48,7 +48,7 @@ function getAll(client, message) {
 
         
 
-    return message.author.send(embed.setDescription(info));
+    return message.channel.send(embed.setDescription(info));
     
 }
 
